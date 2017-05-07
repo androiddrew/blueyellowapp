@@ -1,0 +1,3 @@
+[run]
+source = blueyellowapp
+omit = blueyellowapp/test*

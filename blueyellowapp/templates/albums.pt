@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Albums</title>
+</head>
+<body>
+    <div class="contents">
+        <div tal:repeat="a albums">
+            <a href="${a.url}">buy ${a.title}</a>
+            <a tal:condition="a.has_preview" href="${a.url}?try">preview music</a>
+        </div>
+    </div>
+</body>
+</html>
